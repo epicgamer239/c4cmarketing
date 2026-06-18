@@ -1,0 +1,71 @@
+import Image from "next/image";
+import Link from "next/link";
+import { PLATFORM_URL } from "@/lib/constants";
+
+export default function Footer() {
+  return (
+    <footer className="border-t border-border bg-muted/30">
+      <div className="mx-auto max-w-6xl px-6 py-14">
+        <div className="grid gap-10 md:grid-cols-3">
+          <div>
+            <div className="flex items-center gap-2.5">
+              <Image src="/c4c.png" alt="Code4Community" width={32} height={32} className="rounded-lg" />
+              <span className="font-semibold">Code4Community</span>
+            </div>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              Student-led engineering that builds custom digital tools for nonprofits and community
+              organizations at low cost.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider">Quick links</h3>
+            <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+              <li><a href="#services" className="hover:text-foreground">Services</a></li>
+              <li><a href="#work" className="hover:text-foreground">Our work</a></li>
+              <li><a href="#about" className="hover:text-foreground">About</a></li>
+              <li>
+                <a href={`${PLATFORM_URL}/work`} className="hover:text-foreground">
+                  Full portfolio
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider">Contact</h3>
+            <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+              <li>
+                <a href="mailto:brhsc4c@gmail.com" className="hover:text-foreground">
+                  brhsc4c@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href={`${PLATFORM_URL}/contact`} className="hover:text-foreground">
+                  Contact form
+                </a>
+              </li>
+              <li>
+                <a href={PLATFORM_URL} className="hover:text-foreground">
+                  code4community.net
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted-foreground sm:flex-row">
+          <p>© {new Date().getFullYear()} Code4Community. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Link href={`${PLATFORM_URL}/privacy`} className="hover:text-foreground">
+              Privacy
+            </Link>
+            <Link href={`${PLATFORM_URL}/terms`} className="hover:text-foreground">
+              Terms
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
