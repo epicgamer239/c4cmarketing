@@ -1,21 +1,25 @@
 import Image from "next/image";
-import { workProjects, PLATFORM_URL } from "@/lib/constants";
+import Link from "next/link";
+import { workProjects } from "@/lib/constants";
 
-export default function Work() {
+export default function Work({ standalone = false }) {
   return (
-    <section className="py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Our work</h1>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Student-built tools shipped for teachers, nonprofits, and the broader community.
-          </p>
-        </div>
+    <section className={standalone ? "" : "border-t border-border bg-muted/20"}>
+      <div className="py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Our work</h1>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Student-built tools shipped for teachers, nonprofits, and the broader community.
+            </p>
+          </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {workProjects.map((project) => {
-            const content = (
-              <article className="group overflow-hidden rounded-2xl border border-border bg-background transition-shadow hover:shadow-lg">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {workProjects.map((project) => (
+              <article
+                key={project.title}
+                className="group overflow-hidden rounded-2xl border border-border bg-background transition-shadow hover:shadow-lg"
+              >
                 {project.image ? (
                   <div className="relative aspect-[16/10] overflow-hidden bg-muted">
                     <Image
@@ -46,30 +50,22 @@ export default function Work() {
                   <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
                 </div>
               </article>
-            );
+            ))}
+          </div>
 
-            if (project.external) {
-              return (
-                <a key={project.title} href={project.external} target="_blank" rel="noopener noreferrer">
-                  {content}
-                </a>
-              );
-            }
-
-            return <div key={project.title}>{content}</div>;
-          })}
-        </div>
-
-        <div className="mt-12 text-center">
-          <a
-            href={`${PLATFORM_URL}/work`}
-            className="inline-flex items-center gap-2 rounded-lg border-2 border-foreground px-8 py-3 font-medium transition-colors hover:bg-foreground hover:text-background"
-          >
-            See all work
-            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
+          {!standalone && (
+            <div className="mt-12 text-center">
+              <Link
+                href="/work"
+                className="inline-flex items-center gap-2 rounded-lg border-2 border-foreground px-8 py-3 font-medium transition-colors hover:bg-foreground hover:text-background"
+              >
+                See all work
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
-import Problem from "@/components/Problem";
 import HowItWorks from "@/components/HowItWorks";
+import Stats from "@/components/Stats";
 import Work from "@/components/Work";
 import CTA from "@/components/CTA";
 
@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <Hero />
       <Partners />
-      <Problem />
       <HowItWorks />
+      <Stats />
       <Work />
       <CTA />
     </>

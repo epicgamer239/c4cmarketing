@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { navLinks, PLATFORM_URL } from "@/lib/constants";
+import { navLinks } from "@/lib/constants";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -39,12 +39,12 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <a
-            href={`${PLATFORM_URL}/signup`}
+          <Link
+            href="/contact"
             className="rounded-lg bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90"
           >
-            Request a Tool
-          </a>
+            Start Build
+          </Link>
         </div>
 
         <button
@@ -87,12 +87,12 @@ export default function Navbar() {
                 </a>
               )
             )}
-            <a
-              href={`${PLATFORM_URL}/signup`}
-              className="mt-2 rounded-lg bg-foreground px-4 py-2.5 text-center text-sm font-medium text-background"
+            <Link
+              href="/contact"
+              className="mt-2 block rounded-lg bg-foreground px-4 py-2.5 text-center text-sm font-medium text-background"
             >
-              Request a Tool
-            </a>
+              Start Build
+            </Link>
           </nav>
         </div>
       )}

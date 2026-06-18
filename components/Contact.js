@@ -1,4 +1,4 @@
-import { PLATFORM_URL } from "@/lib/constants";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -41,18 +41,13 @@ export default function Contact() {
           </ul>
         </div>
 
-        <div className="flex flex-wrap gap-4 pt-2">
+        <div className="pt-2">
           <a
-            href={`${PLATFORM_URL}/signup`}
-            className="inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3 font-medium text-background transition-opacity hover:opacity-90"
+            href="mailto:brhsc4c@gmail.com"
+            className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 font-medium text-background transition-opacity hover:opacity-90"
           >
-            Request a Tool
-          </a>
-          <a
-            href={`${PLATFORM_URL}/contact`}
-            className="inline-flex items-center gap-2 rounded-lg border-2 border-foreground px-6 py-3 font-medium transition-colors hover:bg-foreground hover:text-background"
-          >
-            Platform contact form
+            Start Build
+            <span aria-hidden>→</span>
           </a>
         </div>
       </div>

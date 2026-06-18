@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { heroPhrases, PLATFORM_URL } from "@/lib/constants";
+import { heroPhrases } from "@/lib/constants";
 import HeroBrowserMockup from "@/components/HeroBrowserMockup";
 
 const TYPE_MS = 70;
@@ -84,10 +84,10 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href={`${PLATFORM_URL}/signup`}
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3 font-medium text-background transition-opacity hover:opacity-90"
             >
-              Request a Tool
+              Start Build
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

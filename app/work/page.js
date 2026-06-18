@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function WorkPage() {
-  return <Work />;
+  return <Work standalone />;
 }

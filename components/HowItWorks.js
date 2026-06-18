@@ -4,15 +4,13 @@ export default function HowItWorks() {
   return (
     <section id="process" className="border-t border-border bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-6xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-600">
             How it works
           </p>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
+          <h2 className="mt-4 text-[1.65rem] font-bold leading-tight tracking-tight text-foreground sm:text-3xl lg:text-4xl lg:whitespace-nowrap">
             Three steps to a site that{" "}
-            <span className="bg-gradient-to-r from-violet-500 via-purple-500 to-amber-500 bg-clip-text text-transparent">
-              sells for you
-            </span>
+            <span className="text-violet-600">sells for you</span>
           </h2>
         </div>
 
