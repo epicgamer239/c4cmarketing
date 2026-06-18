@@ -21,14 +21,10 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider">Quick links</h3>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-              <li><a href="#services" className="hover:text-foreground">Services</a></li>
-              <li><a href="#work" className="hover:text-foreground">Our work</a></li>
-              <li><a href="#about" className="hover:text-foreground">About</a></li>
-              <li>
-                <a href={`${PLATFORM_URL}/work`} className="hover:text-foreground">
-                  Full portfolio
-                </a>
-              </li>
+              <li><Link href="/" className="hover:text-foreground">Home</Link></li>
+              <li><Link href="/about" className="hover:text-foreground">About</Link></li>
+              <li><Link href="/work" className="hover:text-foreground">Work</Link></li>
+              <li><Link href="/contact" className="hover:text-foreground">Contact</Link></li>
             </ul>
           </div>
 

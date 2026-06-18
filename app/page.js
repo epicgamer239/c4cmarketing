@@ -1,10 +1,8 @@
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import Problem from "@/components/Problem";
-import Services from "@/components/Services";
-import Process from "@/components/Process";
+import HowItWorks from "@/components/HowItWorks";
 import Work from "@/components/Work";
-import About from "@/components/About";
 import CTA from "@/components/CTA";
 
 export default function Home() {
@@ -13,10 +11,8 @@ export default function Home() {
       <Hero />
       <Partners />
       <Problem />
-      <Services />
-      <Process />
+      <HowItWorks />
       <Work />
-      <About />
       <CTA />
     </>
   );

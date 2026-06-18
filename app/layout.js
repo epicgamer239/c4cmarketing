@@ -12,6 +12,10 @@ export const metadata = {
   title: "Code4Community | Custom Software for Community Organizations",
   description:
     "Student-led engineering club building custom websites, tools, and software for nonprofits and small businesses at low cost.",
+  icons: {
+    icon: "/c4c.png",
+    apple: "/c4c.png",
+  },
   openGraph: {
     title: "Code4Community | Custom Software for Community Organizations",
     description:

@@ -3,10 +3,10 @@ import { workProjects, PLATFORM_URL } from "@/lib/constants";
 
 export default function Work() {
   return (
-    <section id="work" className="border-t border-border bg-muted/20 py-20 md:py-28">
+    <section className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Some of our work</h2>
+          <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Our work</h1>
           <p className="mt-4 text-lg text-muted-foreground">
             Student-built tools shipped for teachers, nonprofits, and the broader community.
           </p>

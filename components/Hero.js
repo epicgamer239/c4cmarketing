@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { heroPhrases, buildItems, PLATFORM_URL } from "@/lib/constants";
-import { buildIconMap } from "@/components/icons";
+import { heroPhrases, PLATFORM_URL } from "@/lib/constants";
+import HeroBrowserMockup from "@/components/HeroBrowserMockup";
 
 const TYPE_MS = 70;
 const DELETE_MS = 45;
@@ -93,47 +93,16 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="#services"
+              href="#process"
               className="inline-flex items-center gap-2 rounded-lg border-2 border-foreground px-6 py-3 font-medium transition-colors hover:bg-foreground hover:text-background"
             >
-              Explore services
+              How it works
             </a>
           </div>
         </div>
 
         <div className="flex-1">
-          <div className="relative rounded-2xl border border-border bg-muted/30 p-6 shadow-sm lg:p-8">
-            <div
-              className="absolute inset-0 rounded-2xl opacity-[0.03]"
-              style={{
-                backgroundImage:
-                  "linear-gradient(var(--foreground) 1px, transparent 1px), linear-gradient(90deg, var(--foreground) 1px, transparent 1px)",
-                backgroundSize: "24px 24px",
-              }}
-            />
-            <div className="relative">
-              <h2 className="text-lg font-semibold">We help you make</h2>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Your idea, we build it — from concept to launch.
-              </p>
-              <div className="mt-6 grid grid-cols-2 gap-3">
-                {buildItems.map((item) => {
-                  const Icon = buildIconMap[item.icon];
-                  return (
-                    <div
-                      key={item.label}
-                      className="flex items-center gap-3 rounded-lg border border-border bg-background px-4 py-3 shadow-sm"
-                    >
-                      <span className="shrink-0 text-violet-500">
-                        <Icon />
-                      </span>
-                      <span className="text-sm font-medium">{item.label}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+          <HeroBrowserMockup />
         </div>
       </div>
     </section>
