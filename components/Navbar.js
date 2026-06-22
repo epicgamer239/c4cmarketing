@@ -10,13 +10,13 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-lg">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-2.5">
+      <div className="mx-auto flex h-16 max-w-6xl items-center px-6 md:grid md:grid-cols-3">
+        <Link href="/" className="flex items-center gap-2.5 justify-self-start">
           <Image src="/c4c.png" alt="Code4Community" width={36} height={36} className="rounded-lg" />
           <span className="text-lg font-semibold tracking-tight">Code4Community</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center justify-center gap-8 md:flex">
           {navLinks.map((link) =>
             link.href.startsWith("/") && !link.href.includes("#") ? (
               <Link
@@ -38,10 +38,10 @@ export default function Navbar() {
           )}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="ml-auto flex items-center gap-3 justify-self-end md:ml-0">
           <Link
             href="/contact"
-            className="rounded-lg bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90"
+            className="hidden rounded-lg bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90 md:inline-flex"
           >
             Start Build
           </Link>

@@ -2,6 +2,8 @@
 
 export const metadata = {
   title: "Code4Community | Terms of Service",
+  description:
+    "Terms of Service for Code4Community — professional website design, development, and management services.",
 };
 
 export const dynamic = "force-static";
@@ -27,7 +29,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">2. Description of Service</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Code4Community is a web platform that provides applications and tools for nonprofits and other organizations, including dashboards, data tools, and productivity applications. Certain features may require you to create an account and sign in. We collect and process information as described in our Privacy Policy in order to operate the Service and provide account-based features.
+                Code4Community provides professional website design, development, and management services for nonprofits and small businesses. Certain features may require you to create an account and sign in. We collect and process information as described in our Privacy Policy in order to operate the Service and provide account-based features.
               </p>
             </section>
 
@@ -60,14 +62,14 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">5. Use of Tools and Data</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">5. Use of Websites and Data</h2>
               <div className="text-muted-foreground leading-relaxed space-y-3">
                 <p>
-                  When using our tools and applications:
+                  When using our websites and services:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>You are responsible for the accuracy and lawfulness of any data you provide</li>
-                  <li>Tools and results are provided &quot;as is&quot;; you should verify results independently when used for official or high stakes purposes</li>
+                  <li>Websites and results are provided &quot;as is&quot;; you should verify results independently when used for official or high stakes purposes</li>
                   <li>Data you submit through the Service may be stored and processed as described in our Privacy Policy</li>
                 </ul>
               </div>
@@ -98,7 +100,7 @@ export default function TermsOfService() {
               <h2 className="text-2xl font-semibold text-foreground mb-4">9. Limitation of Liability</h2>
               <div className="text-muted-foreground leading-relaxed space-y-3">
                 <p>
-                  To the maximum extent permitted by applicable law, Code4Community and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages (including loss of profits, data, goodwill, or business opportunity) arising from your use of the Service, your account, or your reliance on any content or tools provided through the Service.
+                  To the maximum extent permitted by applicable law, Code4Community and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages (including loss of profits, data, goodwill, or business opportunity) arising from your use of the Service, your account, or your reliance on any content or websites provided through the Service.
                 </p>
                 <p>
                   Without limiting the above, we shall not be liable for any damages or losses resulting from unauthorized access to your account or our systems, data breaches, security incidents, loss or corruption of data, or any failure to maintain or protect the security of the Service or user data. You acknowledge that no system is completely secure and that you use the Service at your own risk with respect to the security and confidentiality of your information.

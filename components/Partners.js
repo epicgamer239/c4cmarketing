@@ -2,7 +2,7 @@ import Image from "next/image";
 import { partners } from "@/lib/constants";
 
 const REPEATS_PER_SET = 12;
-const SECONDS_PER_LOGO = 4;
+const SECONDS_PER_LOGO = 8;
 
 function PartnerLogo({ partner }) {
   return (

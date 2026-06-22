@@ -9,17 +9,17 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Code4Community | Custom Software for Community Organizations",
+  title: "Code4Community | Professional Websites Built & Managed",
   description:
-    "Student-led engineering club building custom websites, tools, and software for nonprofits and small businesses at low cost.",
+    "Student-led team building professional websites for local nonprofits and small businesses. Built, managed, and optimized at low cost.",
   icons: {
     icon: "/c4c.png",
     apple: "/c4c.png",
   },
   openGraph: {
-    title: "Code4Community | Custom Software for Community Organizations",
+    title: "Code4Community | Professional Websites Built & Managed",
     description:
-      "Student-led engineering club building custom digital tools for nonprofits and community organizations at low cost.",
+      "Student-led team building professional websites for local nonprofits and small businesses. Built, managed, and optimized at low cost.",
     url: "https://code4community.net",
     siteName: "Code4Community",
     type: "website",

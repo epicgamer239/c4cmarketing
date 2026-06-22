@@ -2,6 +2,8 @@
 
 export const metadata = {
   title: "Code4Community | Privacy Policy",
+  description:
+    "Privacy Policy for Code4Community — how we collect, use, and protect your information.",
 };
 
 export const dynamic = "force-static";
@@ -44,7 +46,7 @@ export default function PrivacyPolicy() {
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">2.2 Data You Submit Through the Service</h3>
               <div className="text-muted-foreground leading-relaxed space-y-3">
                 <p>
-                  When you use tools or features that accept input (e.g., dashboards, forms, or project data), we may store the content you submit so we can provide the feature, persist your work, and improve the Service. This may include preferences, saved configurations, and any text or data you choose to upload or enter. We use this data solely to operate and improve the Service and to fulfill our obligations to you.
+                  When you use website features that accept input (e.g., contact forms or project data), we may store the content you submit so we can provide the feature, persist your work, and improve the Service. This may include preferences, saved configurations, and any text or data you choose to upload or enter. We use this data solely to operate and improve the Service and to fulfill our obligations to you.
                 </p>
               </div>
 

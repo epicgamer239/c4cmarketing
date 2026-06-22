@@ -28,11 +28,11 @@ function BrowserMockup({ image, url, caption, subcaption }) {
 const buildSteps = [
   {
     title: "Student engineers",
-    description: "Headlines, layouts, and tools scoped for how your organization works.",
+    description: "Headlines, layouts, and pages scoped for how your business works.",
   },
   {
     title: "Team builds",
-    description: "Real student developers craft your site and software from the ground up.",
+    description: "Real student developers craft your website from the ground up.",
   },
   {
     title: "You approve",
@@ -49,12 +49,12 @@ export default function AboutPageContent() {
             About Code4Community
           </p>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-            Because organizations deserve tools that actually work.
+            Because organizations deserve websites that actually work.
           </h1>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-            Most nonprofits and small organizations either overpay agencies thousands upfront, or
-            end up without the digital tools they need. We built Code4Community to change that:
-            custom, practical websites and software built by students at low cost.
+            Most nonprofits and small businesses either overpay agencies thousands upfront, or
+            end up without the professional websites they need. We built Code4Community to change
+            that: custom, conversion-focused websites built and managed by students at low cost.
           </p>
         </div>
 
@@ -96,14 +96,14 @@ export default function AboutPageContent() {
               <p>
                 I started Code4Community because most organizations I talked to were leaving real
                 impact on the table. Not because the people running them weren&apos;t great at what
-                they do — because their tools and websites weren&apos;t doing the work. A missing
-                signup flow, a spreadsheet instead of a dashboard, a site nobody updated. Small
-                things that cost real time and money.
+                they do — because their websites weren&apos;t doing the work. A missing
+                signup flow, a weak homepage, a site nobody updated. Small things that cost real
+                time and money.
               </p>
               <p>
-                Technology moves fast. Most community organizations don&apos;t have time or budget
+                Technology moves fast. Most small businesses don&apos;t have time or budget
                 to keep up with all of it. That&apos;s what Code4Community is for. Our student team
-                builds and ships the tools you need so you can focus on your mission — no matter how
+                builds and manages the websites you need so you can focus on your business — no matter how
                 the landscape shifts.
               </p>
             </div>
@@ -147,7 +147,7 @@ export default function AboutPageContent() {
       <section className="bg-[#05070a] px-6 py-20 md:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-2xl font-bold text-white md:text-3xl lg:text-4xl">
-            Custom tools. Built for you.
+            Professional websites. Built for you.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-white/75 md:text-lg">
             Book a short call. We&apos;ll scope your project and walk through it together. Launch

@@ -7,6 +7,9 @@ import HeroBrowserMockup from "@/components/HeroBrowserMockup";
 const TYPE_MS = 70;
 const DELETE_MS = 45;
 const HOLD_MS = 2200;
+const LONGEST_PHRASE = heroPhrases.reduce((longest, phrase) =>
+  phrase.length > longest.length ? phrase : longest
+);
 
 export default function Hero() {
   const [phraseIndex, setPhraseIndex] = useState(0);
@@ -62,24 +65,30 @@ export default function Hero() {
 
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-20 lg:flex-row lg:items-center lg:py-28">
         <div className="flex-1">
-          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-muted/50 px-4 py-1.5 text-sm font-medium text-muted-foreground">
-            <span className="h-2 w-2 rounded-full bg-emerald-500" />
+          <p className="mb-4 inline-flex items-center rounded-full border border-border bg-muted/50 px-4 py-1.5 text-sm font-medium text-muted-foreground">
             Student-led · Low cost · Community-first
           </p>
 
-          <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            Custom digital tools built by students to{" "}
-            <span className="bg-gradient-to-r from-violet-500 via-purple-500 to-amber-500 bg-clip-text text-transparent">
-              {visibleText}
+          <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl">
+            Professional websites built by students to{" "}
+            <span className="inline-grid align-bottom">
+              <span className="invisible col-start-1 row-start-1" aria-hidden="true">
+                {LONGEST_PHRASE}
+              </span>
+              <span className="col-start-1 row-start-1 bg-gradient-to-r from-violet-500 via-purple-500 to-amber-500 bg-clip-text text-transparent">
+                {visibleText}
+                <span
+                  className="ml-1 inline-block h-7 w-0.5 animate-pulse bg-foreground align-middle md:h-8"
+                  aria-hidden
+                />
+              </span>
             </span>
-            <span className="ml-1 inline-block h-9 w-0.5 animate-pulse bg-foreground align-middle md:h-11" aria-hidden />
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Code4Community is a student-led engineering club that builds{" "}
-            <strong className="font-semibold text-foreground">custom tools and software</strong> for
-            local nonprofits and small businesses{" "}
-            <strong className="font-semibold text-foreground">at low cost</strong>.
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+            <strong className="font-semibold text-foreground">Professional websites</strong> built,
+            managed, and optimized for your business at{" "}
+            <strong className="font-semibold text-foreground">low cost</strong>.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -99,6 +108,23 @@ export default function Hero() {
               How it works
             </a>
           </div>
+
+          <ul className="mt-6 space-y-2.5">
+            {[
+              "Built to convert visitors into customers",
+              "SEO and AI search visibility included",
+              "Fully managed. No tech headaches.",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-2.5 text-sm text-muted-foreground">
+                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-violet-100 text-violet-600">
+                  <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="flex-1">
